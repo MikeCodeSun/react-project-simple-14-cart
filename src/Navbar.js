@@ -13,7 +13,7 @@ export default function Navbar() {
         </div>
         <div className="nav-cart">
           <FaShoppingCart />
-          <span>{amount}</span>
+          <span className={`${amount > 10 ? "col2" : "col1"}`}>{amount}</span>
         </div>
       </div>
     </nav>

@@ -14,13 +14,13 @@ export default function CartItem({ id, title, price, img, amount }) {
         </button>
       </div>
       <div className="item-amount">
-        <but className="btn" onClick={() => increase(id)}>
+        <button className="btn" onClick={() => increase(id)}>
           +
-        </but>
+        </button>
         <p>{amount}</p>
-        <but className="btn" onClick={() => decrease(id)}>
+        <button className="btn" onClick={() => decrease(id)}>
           -
-        </but>
+        </button>
       </div>
     </div>
   );
